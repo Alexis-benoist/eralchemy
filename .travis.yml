@@ -8,6 +8,8 @@ env:
     - TOXENV=test
     - TOXENV=install
     - TOXENV=flasksqlalchemy
+services:
+    - postgresql
 before_install:
     - sudo apt update && apt install -qq postgresql postgresql-contrib 
     - sudo apt-get -qq install graphviz > /dev/null
