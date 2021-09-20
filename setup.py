@@ -66,8 +66,9 @@ setup(
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        'SQLAlchemy',
-        'pygraphviz'
+        'SQLAlchemy>=1.4',
+        'pygraphviz',
+        'psycopg2',
     ],
     entry_points={
         'console_scripts': [
